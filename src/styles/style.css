@@ -26,6 +26,7 @@
   --clr-paynes-grey: hsl(215, 19%, 35%);
   --clr-oxford-blue: hsl(217, 33%, 17%);
   --clr-raisin-black: hsl(225, 25%, 12%);
+  --clr-amber: hsl(45, 100%, 50%);
 
   --clr-delft-blue-hue: 222;
   --clr-delft-blue-saturation: 70%;
@@ -221,7 +222,7 @@
   --clr-form-input-focus: var(--clr-tropical-indigo);
   --clr-form-label: var(--clr-white);
   --clr-form-background: var(--clr-raisin-black);
-  --clr-form-error: var(--clr-persian-indigo);
+  --clr-form-error: var(--clr-amber);
 }
 
 * {
@@ -261,4 +262,3 @@ button {
 strong {
   color: var(--clr-strong);
 }
-

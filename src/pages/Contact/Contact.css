@@ -6,7 +6,6 @@
   text-align: center;
   gap: 1rem;
   margin-bottom: 1rem;
-  height: calc(100vh - 100px);
 }
 
 .contact__title {
@@ -31,19 +30,23 @@
   padding: 1.5rem;
   border-radius: 5px;
   background-color: var(--clr-form-background);
+  width: 75%
 }
 
 .contact__form-row {
   display: grid;
-  gap: 1rem;
   grid-template-columns: 1fr;
+  width: 100%;
+  padding: 1em;
+  gap: 0.5em;
+
 }
 
 .contact__form-group {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
   width: 100%;
+  gap: 0.2em;
 }
 
 .contact__form-label {
@@ -77,7 +80,7 @@
 .contact__form-error {
   color: var(--clr-form-error);
   font-size: var(--size-xs);
-  min-height: 1.5em;
+  min-height: 2em;
 }
 
 @media (min-width: 475px) {

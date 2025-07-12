@@ -28,7 +28,7 @@ export default function Work() {
   if (loading)
     return (
       <section className="work container section">
-        <p className="work__description">Loading projects...</p>;
+        <p className="work__description">Loading projects...</p> 
       </section>
     );
   if (error)

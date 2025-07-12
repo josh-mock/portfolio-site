@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import toast, { Toaster } from "react-hot-toast";
 import * as yup from "yup";
 import "./Contact.css";
+import Footer from "../../components/Footer/Footer"
 const schema = yup
   .object({
     name: yup
@@ -148,6 +149,7 @@ export default function Contact() {
           </div>
         </form>
       </section>
+      <Footer></Footer>
     </>
   );
 }
