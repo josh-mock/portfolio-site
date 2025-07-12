@@ -14,8 +14,14 @@ export default function Project({ project }) {
       <h3 className="project__subtitle">{project.subtitle}</h3>
       <div className="project__wrapper">
         <h2 className="project__title">{project.title}</h2>
-        <LinkIconLink className={"project__link"} href={project.demoUrl} />
-        <GitHubIconLink className={"project__link"} href={project.gitHubUrl} />
+        <LinkIconLink
+          className={"project__link inline-link"}
+          href={project.demoUrl}
+        />
+        <GitHubIconLink
+          className={"project__link inline-link"}
+          href={project.gitHubUrl}
+        />
       </div>
 
       <div
