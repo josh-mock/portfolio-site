@@ -2,16 +2,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 4rem;
+  margin-bottom: 2rem;  
 }
 
 .footer__content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
   gap: 1.5rem;
-  margin-bottom: 1rem;
 }
 
 .footer__btn {
@@ -40,3 +38,9 @@
   letter-spacing: 0.2em;
   user-select: none;
 }
+
+.footer__line {
+  border: 1px solid var(--clr-line);
+  padding-top: 1.5em;
+}
+
