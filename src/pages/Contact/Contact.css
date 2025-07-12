@@ -30,7 +30,7 @@
   padding: 1.5rem;
   border-radius: 5px;
   background-color: var(--clr-form-background);
-  width: 75%
+  width: 75%;
 }
 
 .contact__form-row {
@@ -39,7 +39,6 @@
   width: 100%;
   padding: 1em;
   gap: 0.5em;
-
 }
 
 .contact__form-group {
@@ -106,6 +105,10 @@
 }
 
 @media (min-width: 640px) {
+  .contact__form {
+    width: 80%;
+  }
+
   .contact__form-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
