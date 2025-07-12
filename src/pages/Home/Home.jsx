@@ -3,14 +3,16 @@ import homeImg from "../../assets/home/home.jpeg";
 import GitHubBtn from "../../components/Buttons/GitHubBtn";
 import LinkedInBtn from "../../components/Buttons/LinkedInBtn";
 import "./Home.css";
+import LazyImg from "../../components/LazyImg";
 
 export default function Home() {
   return (
     <section className="home container">
-      <img
+      <LazyImg
         className="home__img"
-        src={homeImg}
-        alt="Profile picture of site owner"
+        src={"https://placehold.co/640"}
+        dataSrc={homeImg}
+        alt={"Profile picture of site owner"}
       />
       <h2 className="home__subtitle">Hi, I'm Josh 👋</h2>
       <h1 className="home__title">

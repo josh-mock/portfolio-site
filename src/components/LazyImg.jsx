@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 
-export default function LazyImg({ src, dataSrc, alt }) {
+export default function LazyImg({ src, dataSrc, alt, className = "" }) {
   const imgRef = useRef();
 
   useEffect(() => {
@@ -32,7 +32,7 @@ export default function LazyImg({ src, dataSrc, alt }) {
       src={src}
       data-src={dataSrc}
       alt={alt}
-      className="lazy loading"
+      className={`${className} lazy loading`}
     />
   );
 }
