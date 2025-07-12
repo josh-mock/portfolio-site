@@ -20,6 +20,7 @@
 .project__link {
   width: var(--size-2xl);
   height: var(--size-2xl);
+  color: var(--clr-inline-link);
 }
 
 .project__link:hover {

@@ -15,11 +15,11 @@ export default function Project({ project }) {
       <div className="project__wrapper">
         <h2 className="project__title">{project.title}</h2>
         <LinkIconLink
-          className={"project__link inline-link"}
+          className={"project__link"}
           href={project.demoUrl}
         />
         <GitHubIconLink
-          className={"project__link inline-link"}
+          className={"project__link"}
           href={project.gitHubUrl}
         />
       </div>
