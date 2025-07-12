@@ -1,0 +1,160 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  height: calc(100vh - 100px);
+}
+
+.contact__title {
+  font-size: var(--size-2xl);
+  color: var(--clr-title);
+  text-transform: capitalize;
+}
+
+.contact__description {
+  font-size: var(--size-sm);
+  color: var(--clr-description);
+  max-width: 60ch;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--clr-line);
+  padding: 1.5rem;
+  border-radius: 5px;
+  background-color: var(--clr-form-background);
+}
+
+.contact__form-row {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+.contact__form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.contact__form-label {
+  color: var(--clr-form-label);
+  font-size: var(--size-sm);
+}
+
+.contact__form-input,
+.contact__form-message {
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: 1px solid var(--clr-line);
+  border-radius: 4px;
+}
+
+.contact__form-input:focus,
+.contact__form-message:focus {
+  outline: none;
+  border-color: var(--clr-form-input-focus);
+  box-shadow: 0 0 5px hsl(211, 100%, 50%);
+}
+
+.contact__form-message {
+  min-height: 8rem;
+}
+
+.contact__form-btn {
+  font-size: var(--size-sm);
+}
+
+.contact__form-error {
+  color: var(--clr-form-error);
+  font-size: var(--size-xs);
+  min-height: 1.5em;
+}
+
+@media (min-width: 475px) {
+  .contact {
+    gap: 1.5rem;
+  }
+
+  .contact__title {
+    font-size: var(--size-3xl);
+  }
+
+  .contact__form-label {
+    font-size: var(--size-base);
+  }
+
+  .contact__description {
+    font-size: var(--size-base);
+  }
+
+  .contact__form-btn {
+    font-size: var(--size-base);
+  }
+}
+
+@media (min-width: 640px) {
+  .contact__form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "name email"
+      "message message"
+      "button button";
+    column-gap: 1rem;
+    row-gap: 1rem;
+  }
+
+  .contact__form-group--name {
+    grid-area: name;
+  }
+
+  .contact__form-group--email {
+    grid-area: email;
+  }
+
+  .contact__form-group--message {
+    grid-area: message;
+  }
+
+  .contact__form-group--button {
+    grid-area: button;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact__form-label {
+    text-align: start;
+  }
+}
+
+@media (min-width: 1280px) {
+  .contact__title {
+    font-size: var(--size-5xl);
+  }
+
+  .contact__description {
+    font-size: var(--size-xl);
+  }
+
+  .contact__form-label {
+    font-size: var(--size-xl);
+  }
+
+  .contact__form-error {
+    font-size: var(--size-lg);
+  }
+
+  .contact__form-btn {
+    font-size: var(--size-xl);
+  }
+}

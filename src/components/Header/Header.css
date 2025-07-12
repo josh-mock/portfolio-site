@@ -1,0 +1,141 @@
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 0.5rem;
+  padding-bottom: 2rem;
+  position: relative;
+  z-index: 9999;
+  height: 100px;
+}
+
+.header__menu {
+  display: none;
+}
+
+.header__bars {
+  color: var(--clr-bars);
+  width: var(--size-2xl);
+  height: var(--size-2xl);
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .header__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    gap: 2em;
+  }
+
+  .header__link {
+    font-size: var(--size-xs);
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--clr-link);
+    letter-spacing: -0.05em;
+  }
+
+  .header__link:hover {
+    color: var(--clr-link-hover);
+    transition: color 0.3s;
+    cursor: pointer;
+  }
+
+  .header__line {
+    border: 1px solid var(--clr-line);
+    padding-top: 1.5em;
+  }
+
+  .header__theme-toggle {
+    display: block;
+    color: var(--clr-theme-toggle);
+    width: var(--size-base);
+    height: var(--size-base);
+  }
+
+  .header__theme-toggle:hover {
+    animation: beat 0.5s;
+  }
+
+  .header__btn {
+    font-size: var(--size-xs);
+  }
+
+  .header__bars {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header__link {
+    font-size: var(--size-sm);
+  }
+
+  .header__theme-toggle {
+    width: var(--size-xl);
+    height: var(--size-xl);
+  }
+
+  .header__btn {
+    font-size: var(--size-sm);
+  }
+}
+
+.mobile-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background-color: var(--clr-background);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.mobile-nav.is-open {
+  display: flex;
+}
+
+.mobile-nav__menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.mobile-nav__link {
+  font-size: var(--size-sm);
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--clr-link);
+  letter-spacing: -0.05em;
+  transition: color 0.3s;
+}
+
+.mobile-nav__link:hover {
+  color: var(--clr-link-hover);
+}
+
+.mobile-nav__link-line {
+  border: 1px solid var(--clr-line);
+  padding-right: 1.5em;
+}
+
+.mobile-nav__theme-toggle {
+  display: block;
+  width: var(--size-xl);
+  height: var(--size-xl);
+  color: var(--clr-theme-toggle);
+}
+
+.mobile-nav__btn {
+  font-size: var(--size-sm);
+}
