@@ -21,7 +21,7 @@ export default function About() {
             <strong>Harvard's CS50</strong> and recently completed the{" "}
             <strong>full-stack web development program </strong> at{" "}
             <strong>
-              <a href="https://www.thejump.tech/" target="_blank">
+              <a className="inline-link" href="https://www.thejump.tech/" target="_blank">
                 The Jump Digital School
               </a>
             </strong>

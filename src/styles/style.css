@@ -80,10 +80,10 @@
 
   /* LINKS */
   --clr-link: var(--clr-oxford-blue);
-  --clr-link-hover: var(--clr-delft-blue);
   --clr-line: var(--clr-oxford-blue);
+  --clr-link-hover: var(--clr-palatinate-blue);
   --clr-inline-link: var(--clr-palatinate-blue);
-  --clr-inline-link-hover: var(--clr-description);
+  --clr-inline-link-hover: var(--clr-paynes-grey);
 
   /* IMAGE WRAPPERS */
   --clr-img-wrapper: hsla(
@@ -262,10 +262,3 @@ strong {
   color: var(--clr-strong);
 }
 
-a {
-  color: var(--clr-inline-link);
-}
-
-a:hover {
-  color: var(--clr-inline-link-hover);
-}

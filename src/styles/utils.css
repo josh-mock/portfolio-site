@@ -26,6 +26,14 @@
   pointer-events: none;
 }
 
+.inline-link {
+  color: var(--clr-inline-link);
+}
+
+.inline-link:hover {
+  color: var(--clr-inline-link-hover);
+}
+
 @keyframes beat {
   0%,
   100% {

@@ -36,6 +36,18 @@
   gap: 1rem;
 }
 
+.project__description a,
+.project__description a strong {
+  color: var(--clr-inline-link);
+  text-decoration-color: var(--clr-inline-link);
+}
+
+.project__description a:hover,
+.project__description a:hover strong {
+  color: var(--clr-inline-link-hover);
+  text-decoration-color: var(--clr-inline-link-hover);
+}
+
 .project__info-container {
   display: flex;
   flex-wrap: wrap;
