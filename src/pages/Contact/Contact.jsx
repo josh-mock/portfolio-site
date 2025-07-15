@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import toast, { Toaster } from "react-hot-toast";
 import * as yup from "yup";
 import "./Contact.css";
-import Footer from "../../components/Footer/Footer"
+import Footer from "../../components/Footer/Footer";
 const schema = yup
   .object({
     name: yup
@@ -37,16 +37,18 @@ export default function Contact() {
   });
 
   const onSubmit = async (data) => {
-    const fakeRequest = new Promise((resolve, reject) => {
-      setTimeout(() => {
-        const success = true;
-        success ? resolve("Message sent!") : reject("Something went wrong");
-      }, 2000);
-    });
+    const formData = new FormData();
+    formData.append("form-name", "contact v1");
+    formData.append("name", data.name);
+    formData.append("email", data.email);
+    formData.append("message", data.message);
 
     try {
       await toast.promise(
-        fakeRequest,
+        fetch("/", {
+          method: "POST",
+          body: formData,
+        }),
         {
           loading: "Sending message...",
           success: "Message sent successfully!",
@@ -58,9 +60,10 @@ export default function Contact() {
           },
         }
       );
+
       reset();
     } catch (error) {
-      console.error(error);
+      console.error("Form submission error:", error);
     }
   };
 
@@ -79,7 +82,13 @@ export default function Contact() {
           className="contact__form"
           autoComplete="off"
           onSubmit={handleSubmit(onSubmit)}
+          name="contact v1"
+          method="post"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
         >
+          <input type="hidden" name="form-name" value="contact v1" />
+          <input type="hidden" name="bot-field" />
           <div className="contact__form-row">
             <div className="contact__form-group contact__form-group--name">
               <label className="contact__form-label" htmlFor="contact-name">
@@ -149,7 +158,7 @@ export default function Contact() {
           </div>
         </form>
       </section>
-      <Footer></Footer>
+      <Footer />
     </>
   );
 }
