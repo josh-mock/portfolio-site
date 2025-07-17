@@ -9,7 +9,7 @@ The site is live at [this link](https://josh-mock.com).
 ## Cloning the site
 
 ```bash
-git clone https://github.com/yourusername/portfolio-site.git
+git clone https://github.com/josh-mock/portfolio-site
 
 cd portfolio-site
 
