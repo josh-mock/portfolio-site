@@ -1,0 +1,24 @@
+{
+    "id": "portfolio-site",
+    "title": "Portfolio Site",
+    "subtitle": "Portfolio Project",
+    "demoUrl": "https://josh-mock.com",
+    "gitHubUrl": "https://github.com/josh-mock/portfolio-site",
+    "timeline": "June 2025-Present",
+    "projectType": "React SPA",
+    "cardDescription": "A multilingual homage to the popular word-guessing game. The app supports both left-to-right and right-to-left languages such as Arabic and Persian.",
+    "fullDescription": "",
+    "techStack": [],
+    "cardImage": {
+        "url": "",
+        "alt": "",
+        "placeholderUrl": "https://placehold.co/900"
+    },
+    "images": [
+        {
+            "url": "",
+            "alt": "",
+            "placeholderUrl": "https://placehold.co/1920x968"
+        }
+    ]
+}

@@ -9,14 +9,13 @@ export default function ProjectCard({ project, reverse }) {
       <div className="work__img-wrapper">
         <LazyImg
           src={project.cardImage.placeholderUrl}
-          dataSrc={project.cardImage.image.url}
+          dataSrc={project.cardImage.url}
           alt={project.cardImage.alt}
         />
       </div>
       <div className="work__content">
         <h2 className="work__project-title">{project.title}</h2>
-        <p className="work__project-description1">{project.cardDescription1}</p>
-        <p className="work__project-description2">{project.cardDescription2}</p>
+        <p className="work__project-description1">{project.cardDescription}</p>
         <div className="work__project-btns">
           <InfoBtn
             className="work__project-btn btn"

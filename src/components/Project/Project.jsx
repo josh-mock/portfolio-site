@@ -7,21 +7,15 @@ import Techstack from "./Techstack";
 
 export default function Project({ project }) {
   const sanitizedProjectDescription = DOMPurify.sanitize(
-    project.projectDescription.html
+    project.fullDescription
   );
   return (
     <section className="project container section">
       <h3 className="project__subtitle">{project.subtitle}</h3>
       <div className="project__wrapper">
         <h2 className="project__title">{project.title}</h2>
-        <LinkIconLink
-          className={"project__link"}
-          href={project.demoUrl}
-        />
-        <GitHubIconLink
-          className={"project__link"}
-          href={project.gitHubUrl}
-        />
+        <LinkIconLink className={"project__link"} href={project.demoUrl} />
+        <GitHubIconLink className={"project__link"} href={project.gitHubUrl} />
       </div>
 
       <div
@@ -40,10 +34,10 @@ export default function Project({ project }) {
         </div>
         <div>
           <h3 className="project__label">Timeline</h3>
-          <p className="project__info">{project.projectTimeline}</p>
+          <p className="project__info">{project.timeline}</p>
         </div>
       </div>
-      <ProjectImgs imgArray={project.projectImages} />
+      <ProjectImgs imgArray={project.images} />
     </section>
   );
 }

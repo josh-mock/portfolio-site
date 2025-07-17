@@ -1,0 +1,24 @@
+{
+    "id": "",
+    "title": "",
+    "subtitle": "",
+    "demoUrl": "",
+    "gitHubUrl": "",
+    "timeline": "",
+    "projectType": "",
+    "cardDescription": "",
+    "fullDescription": "",
+    "techStack": [],
+    "cardImage": {
+        "url": "",
+        "alt": "",
+        "placeholderUrl": "https://placehold.co/900"
+    },
+    "images": [
+        {
+            "url": "",
+            "alt": "",
+            "placeholderUrl": "https://placehold.co/1920x968"
+        }
+    ]
+}
