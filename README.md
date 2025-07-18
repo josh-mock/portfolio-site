@@ -22,8 +22,6 @@ npm run dev
 
 **Client:** React 19, React Router, React Hook Form, Yup, Font Awesome, CSS3.
 
-**Data:** Hygraph (headless CMS), GraphQL
-
 **Build:** Vite, Node.
 
 **Deployment:** Netlify.
