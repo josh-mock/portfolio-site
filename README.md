@@ -43,9 +43,9 @@ npm run dev
 portfolio-site/
 ├── public/
 │   ├── favicon/         # Favicons for various platforms
-│   └── resume.pdf       # Downloadable resume
+│   ├── assets/          # Generic assets 
+│   └── projects/        # Project specific assets           
 ├── src/
-│   ├── assets/          # Images organized by section
 │   ├── components/      # Reusable UI components
 │   ├── constants/       # Constant values
 │   ├── data/            # Project data and metadata
