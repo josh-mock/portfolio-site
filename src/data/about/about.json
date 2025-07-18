@@ -1,0 +1,16 @@
+{
+  "copy": [
+    "I graduated with a <strong>BA in Arabic and Persian</strong> and currently work in <strong>disputes and investigations</strong>, where attention to detail and analytical thinking are key.",
+    "After discovering a love for problem-solving, I <strong>taught myself Python</strong> through <strong>Harvard's CS50</strong> and recently completed the <strong>full-stack web development program</strong> at <strong><a class=\"inline-link\" href=\"https://www.thejump.tech/\" target=\"_blank\">The Jump Digital School</a></strong>.",
+    "I'm now <strong>looking to launch my career in tech</strong>, where I can combine my curiosity, technical skills, and drive to build tools that <strong>solve real problems</strong>."
+  ],
+  "skills": [
+    "HTML5",
+    "CSS3",
+    "JavaScript (ES6+)",
+    "ReactJS",
+    "NodeJS",
+    "Python",
+    "SQL"
+  ]
+}
