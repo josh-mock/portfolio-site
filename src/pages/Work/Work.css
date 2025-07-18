@@ -64,6 +64,25 @@
   font-size: var(--size-sm);
 }
 
+.work__tech-stack {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.work__tech-badge {
+  color: var(--clr-badge-text);
+  font-size: var(--size-xs);
+  background-color: var(--clr-badge);
+  padding: 0.5em 1em;
+  width: fit-content;
+  border-radius: 9999px;
+  display: inline-block;
+}
+
 @media (min-width: 475px) {
   .work__title {
     font-size: var(--size-3xl);
@@ -154,6 +173,10 @@
 
   .work__project-title {
     font-size: var(--size-xl);
+  }
+
+  .work__tech-badge {
+    font-size: var(--size-sm);
   }
 }
 

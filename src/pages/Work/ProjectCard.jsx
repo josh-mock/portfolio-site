@@ -2,7 +2,7 @@ import GitHubBtn from "../../components/Buttons/GitHubBtn";
 import InfoBtn from "../../components/Buttons/InfoBtn";
 import LinkBtn from "../../components/Buttons/LinkBtn";
 import LazyMedia from "../../components/LazyMedia";
-import CardTechStack from "../../components/CardTechStack/CardTechStack";
+import CardTechStack from "./CardTechStack";
 
 export default function ProjectCard({ project, reverse }) {
   return (

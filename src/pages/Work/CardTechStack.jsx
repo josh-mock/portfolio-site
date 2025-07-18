@@ -1,10 +1,10 @@
-import "./card-tech-stack.css"
+import "./Work.css"
 export default function CardTechStack({ techs }) {
   return (
-    <div className="card-tech-stack">
+    <div className="work__tech-stack">
       {techs.map((tech, index) => {
         return (
-          <span key={index} className="card-tech-stack__tech-badge">
+          <span key={index} className="work__tech-badge">
             {tech}
           </span>
         );
