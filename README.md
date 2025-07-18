@@ -34,7 +34,7 @@ npm run dev
 - Responsive sizing including mobile friendly navigation.
 - Button animations.
 - Contact form with validation.
-- Lazy image loading.
+- Lazy media loading.
 - Downloadable resume.
 - Links to live demos and GitHub repositories for each project.
 - Accessible design.

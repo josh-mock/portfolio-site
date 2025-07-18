@@ -6,18 +6,24 @@
     "gitHubUrl": "https://github.com/josh-mock/portfolio-site",
     "timeline": "June 2025-Present",
     "projectType": "React SPA",
-    "cardDescription": "A multilingual homage to the popular word-guessing game. The app supports both left-to-right and right-to-left languages such as Arabic and Persian.",
-    "fullDescription": "",
-    "techStack": [],
+    "cardDescription": "This is my landing page, showcasing my software engineering journey so far.",
+    "fullDescription": "<p>This is my landing page, showcasing my recent projects. I followed <a target='_blank' href=\"https://www.youtube.com/watch?v=dLDn_k8GmaU&ab_channel=SlayingTheDragon\"><strong>this tutorial</strong></a> for design inspiration and ported the app to <strong>React</strong> for greater modularisation. </p><p>I hosted my project assets on <strong>Hygraph</strong> and used <strong>GraphQL </strong>queries to retrieve the data.</p>",
+    "techStack": [
+        "React",
+        "CSS",
+        "React Router",
+        "React Hook Form",
+        "Yup"
+    ],
     "cardImage": {
-        "url": "",
-        "alt": "",
+        "url": "/projects/portfolio-site/card.webp",
+        "alt": "Portfolio site homepage",
         "placeholderUrl": "https://placehold.co/900"
     },
     "images": [
         {
-            "url": "",
-            "alt": "",
+            "url": "/projects/portfolio-site/1.webp",
+            "alt": "Portfolio site homepage",
             "placeholderUrl": "https://placehold.co/1920x968"
         }
     ]

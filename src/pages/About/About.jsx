@@ -1,6 +1,6 @@
 import aboutImg from "../../assets/about/about.jpeg";
 import Footer from "../../components/Footer/Footer";
-import LazyImg from "../../components/LazyImg";
+import LazyMedia from "../../components/LazyMedia";
 import "./About.css";
 import Skills from "./Skills";
 
@@ -21,7 +21,11 @@ export default function About() {
             <strong>Harvard's CS50</strong> and recently completed the{" "}
             <strong>full-stack web development program </strong> at{" "}
             <strong>
-              <a className="inline-link" href="https://www.thejump.tech/" target="_blank">
+              <a
+                className="inline-link"
+                href="https://www.thejump.tech/"
+                target="_blank"
+              >
                 The Jump Digital School
               </a>
             </strong>
@@ -48,7 +52,7 @@ export default function About() {
           />
         </div>
         <div className="about__img-wrapper">
-          <LazyImg
+          <LazyMedia
             src={"https://placehold.co/720"}
             dataSrc={aboutImg}
             alt={"Portrait of the site owner"}

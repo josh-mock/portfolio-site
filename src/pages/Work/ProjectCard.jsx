@@ -1,13 +1,13 @@
 import GitHubBtn from "../../components/Buttons/GitHubBtn";
 import InfoBtn from "../../components/Buttons/InfoBtn";
 import LinkBtn from "../../components/Buttons/LinkBtn";
-import LazyImg from "../../components/LazyImg";
+import LazyMedia from "../../components/LazyMedia";
 
 export default function ProjectCard({ project, reverse }) {
   return (
     <div className={`work__project ${reverse ? "reverse" : ""}`}>
       <div className="work__img-wrapper">
-        <LazyImg
+        <LazyMedia
           src={project.cardImage.placeholderUrl}
           dataSrc={project.cardImage.url}
           alt={project.cardImage.alt}
