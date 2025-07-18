@@ -1,4 +1,3 @@
-import aboutImg from "../../assets/about/about.jpeg";
 import Footer from "../../components/Footer/Footer";
 import LazyMedia from "../../components/LazyMedia";
 import "./About.css";
@@ -53,9 +52,9 @@ export default function About() {
         </div>
         <div className="about__img-wrapper">
           <LazyMedia
-            src={"https://placehold.co/720"}
-            dataSrc={aboutImg}
-            alt={"Portrait of the site owner"}
+            src="https://placehold.co/720"
+            dataSrc="/assets/about.webp"
+            alt="Portrait of the site owner"
           />
         </div>
       </section>
