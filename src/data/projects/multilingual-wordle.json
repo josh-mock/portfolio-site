@@ -2,7 +2,7 @@
     "id": "multilingual-wordle",
     "title": "Multilingual Wordle",
     "subtitle": "Portfolio Project",
-    "demoUrl": "https://josh-mock.com",
+    "demoUrl": "https://multilingual-wordle.netlify.app",
     "gitHubUrl": "https://github.com/josh-mock/multilingual-wordle",
     "timeline": "July 2025",
     "projectType": "React SPA",
