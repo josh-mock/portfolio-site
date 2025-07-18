@@ -129,6 +129,15 @@
     calc(var(--clr-delft-blue-lightness) + 10%)
   );
 
+  /* Badges */
+  --clr-badge-text: var(--clr-white);
+  --clr-badge: hsla(
+    var(--clr-delft-blue-hue),
+    var(--clr-delft-blue-saturation),
+    var(--clr-delft-blue-lightness),
+    0.6
+  );
+
   /* FORM */
   --clr-form-input-focus: var(--clr-palatinate-blue);
   --clr-form-label: var(--clr-oxford-blue);
@@ -216,6 +225,15 @@
     var(--clr-persian-indigo-hue),
     calc(var(--clr-persian-indigo-saturation) * 0.2),
     calc(var(--clr-persian-indigo-lightness) + 10%)
+  );
+
+  /* BADGES */
+  --clr-badge-text: var(--clr-white);
+  --clr-badge: hsla(
+    var(--clr-persian-indigo-hue),
+    var(--clr-persian-indigo-saturation),
+    var(--clr-persian-indigo-lightness),
+    0.5
   );
 
   /* FORM */
