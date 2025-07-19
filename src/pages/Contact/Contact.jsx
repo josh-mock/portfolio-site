@@ -4,6 +4,7 @@ import toast, { Toaster } from "react-hot-toast";
 import * as yup from "yup";
 import "./Contact.css";
 import Footer from "../../components/Footer/Footer";
+import contact from "../../data/contact.json"
 const schema = yup
   .object({
     name: yup
@@ -71,11 +72,8 @@ export default function Contact() {
     <>
       <Toaster />
       <section id="contact" className="contact container section">
-        <h1 className="contact__title">Get In Touch</h1>
-        <p className="contact__description">
-          I'm currently looking for opportunities to start my career in tech. If
-          you're hiring or think I’d be a good fit for your team, feel free to
-          reach out — I’d love to connect!
+        <h1 className="contact__title">{contact.title}</h1>
+        <p className="contact__description">{contact.copy}
         </p>
 
         <form

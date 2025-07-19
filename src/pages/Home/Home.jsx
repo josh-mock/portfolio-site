@@ -3,6 +3,7 @@ import GitHubBtn from "../../components/Buttons/GitHubBtn";
 import LinkedInBtn from "../../components/Buttons/LinkedInBtn";
 import LazyMedia from "../../components/LazyMedia";
 import "./Home.css";
+import home from "../../data/home.json";
 
 export default function Home() {
   return (
@@ -13,17 +14,15 @@ export default function Home() {
         dataSrc="/assets/home.webp"
         alt="Profile picture of site owner"
       />
-      <h2 className="home__subtitle">Hi, I'm Josh 👋</h2>
-      <h1 className="home__title">
-        FULL-STACK <br />
-        WEB DEVELOPER.
-      </h1>
-      <p className="home__description">
-        I'm a <strong>Full-Stack Web Developer</strong> with a strong interest
-        in <strong>data-driven applications</strong>. I love building scalable
-        web apps that <strong>solve real-world problems</strong> and turn
-        complex data into <strong>meaningful insights</strong>.
-      </p>
+      <h2 className="home__subtitle">{home.subtitle}</h2>
+      <h1
+        className="home__title"
+        dangerouslySetInnerHTML={{ __html: home.title }}
+      ></h1>
+      <p
+        className="home__description"
+        dangerouslySetInnerHTML={{ __html: home.copy }}
+      ></p>
 
       <div className="home__btns">
         <Link className={"home__btn btn"} to={"/contact"}>

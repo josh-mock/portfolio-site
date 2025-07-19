@@ -2,14 +2,14 @@ import Footer from "../../components/Footer/Footer";
 import LazyMedia from "../../components/LazyMedia";
 import "./About.css";
 import Skills from "./Skills";
-import about from "../../data/about/about.json";
+import about from "../../data/about.json";
 
 export default function About() {
   return (
     <>
       <section id="about" className="about container section">
         <div className="about__content">
-          <h2 className="about__title">About</h2>
+          <h2 className="about__title">{about.title}</h2>
           {about.copy.map((paragraph, index) => (
             <p
               key={index}
@@ -19,7 +19,7 @@ export default function About() {
           ))}
 
           <hr className="about__hr" />
-          <h3 className="about__subtitle">Skills</h3>
+          <h3 className="about__subtitle">{about.skills_section_title}</h3>
           <Skills skills={about.skills} listLength={3} />
         </div>
         <div className="about__img-wrapper">
