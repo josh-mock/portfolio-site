@@ -9,8 +9,12 @@ export default function Footer({ className = "footer container" }) {
         <h3 className="footer__title">~ Josh Mock ~</h3>
         <div className="footer__line" aria-label="Visual divider"></div>
         <div className="footer__btns">
-          <LinkedInBtn className={"footer__btn btn"} />
-          <GitHubBtn className={"footer__btn btn"} />
+          <div className="btn-wrapper">
+            <LinkedInBtn className={"footer__btn btn"} />
+          </div>
+          <div className="btn-wrapper">
+            <GitHubBtn className={"footer__btn btn"} />
+          </div>
         </div>
       </div>
     </footer>

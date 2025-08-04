@@ -20,20 +20,26 @@ export default function ProjectCard({ project, reverse }) {
         <CardTechStack techs={project.techStack} />
 
         <div className="work__project-btns">
-          <InfoBtn
-            className="work__project-btn btn"
-            href={`/projects/${project.id}`}
-          />
-          <LinkBtn
-            className={"work__project-btn btn"}
-            href={project.demoUrl}
-            ariaLabel="View project demo"
-          />
-          <GitHubBtn
-            className={"work__project-btn btn"}
-            href={project.gitHubUrl}
-            ariaLabel="View project's GitHub repository"
-          />
+          <div className="btn-wrapper">
+            <InfoBtn
+              className="work__project-btn btn"
+              href={`/projects/${project.id}`}
+            />
+          </div>
+          <div className="btn-wrapper">
+            <LinkBtn
+              className={"work__project-btn btn"}
+              href={project.demoUrl}
+              ariaLabel="View project demo"
+            />
+          </div>
+          <div className="btn-wrapper">
+            <GitHubBtn
+              className={"work__project-btn btn"}
+              href={project.gitHubUrl}
+              ariaLabel="View project's GitHub repository"
+            />
+          </div>
         </div>
       </div>
     </div>

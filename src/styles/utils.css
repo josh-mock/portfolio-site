@@ -1,3 +1,13 @@
+.btn-wrapper {
+  display: inline-block;
+}
+
+.btn-wrapper:hover .btn {
+  transform: translateY(-3px);
+  box-shadow: 0 7px 14px var(--clr-btn-shadow-hover),
+    0 5px 5px var(--clr-btn-shadow-hover), 0 0 15px -5px var(--clr-btn);
+}
+
 .btn {
   display: inline-block;
   font-weight: 600;
@@ -10,20 +20,6 @@
   box-shadow: 0 5px 10px var(--clr-btn-shadow), 0 3px 3px var(--clr-btn-shadow),
     0 0 12.5px -5px var(--clr-btn);
   transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 7px 14px var(--clr-btn-shadow-hover),
-    0 5px 5px var(--clr-btn-shadow-hover), 0 0 15px -5px var(--clr-btn);
-}
-
-.btn:disabled {
-  background-color: var(--clr-btn-disabled);
-  cursor: not-allowed;
-  box-shadow: none;
-  opacity: 0.6;
-  pointer-events: none;
 }
 
 .inline-link {

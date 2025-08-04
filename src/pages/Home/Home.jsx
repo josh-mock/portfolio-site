@@ -25,11 +25,17 @@ export default function Home() {
       ></p>
 
       <div className="home__btns">
-        <Link className={"home__btn btn"} to={"/contact"}>
-          Reach out
-        </Link>
-        <LinkedInBtn className={"home__btn btn"} />
-        <GitHubBtn className={"home__btn btn"} />
+        <div className="btn-wrapper">
+          <Link className={"home__btn btn"} to={"/contact"}>
+            Reach out
+          </Link>
+        </div>
+        <div className="btn-wrapper">
+          <LinkedInBtn className={"home__btn btn"} />
+        </div>
+        <div className="btn-wrapper">
+          <GitHubBtn className={"home__btn btn"} />
+        </div>
       </div>
     </section>
   );

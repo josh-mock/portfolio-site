@@ -60,24 +60,30 @@ export default function Header() {
             </li>
 
             <li>
-              <LinkedInBtn className="header__btn btn" />
+              <div className="btn-wrapper">
+                <LinkedInBtn className="header__btn btn" />
+              </div>
             </li>
             <li>
-              <GitHubBtn className="header__btn btn" />
+              <div className="btn-wrapper">
+                <GitHubBtn className="header__btn btn" />
+              </div>
             </li>
             <li className="header__line" aria-label="Visual divider"></li>
             <li>
               <ThemeToggleBtn className="header__theme-toggle" />
             </li>
             <li>
-              <a
-                className="header__btn btn"
-                href="/resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Resume
-              </a>
+              <div className="btn-wrapper">
+                <a
+                  className="header__btn btn"
+                  href="/resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Resume
+                </a>
+              </div>
             </li>
           </ul>
 
@@ -126,24 +132,30 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <LinkedInBtn className="mobile-nav__btn btn" />
+              <div className="btn-wrapper">
+                <LinkedInBtn className="mobile-nav__btn btn" />
+              </div>
             </li>
             <li>
-              <GitHubBtn className="mobile-nav__btn btn" />
+              <div className="btn-wrapper">
+                <GitHubBtn className="mobile-nav__btn btn" />
+              </div>
             </li>
             <li className="mobile-nav__link-line"></li>
             <li>
               <ThemeToggleBtn className="mobile-nav__theme-toggle" />
             </li>
             <li>
-              <a
-                className="mobile-nav__btn btn"
-                href="/resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Resume
-              </a>
+              <div className="btn-wrapper">
+                <a
+                  className="mobile-nav__btn btn"
+                  href="/resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Resume
+                </a>
+              </div>
             </li>
           </ul>
         </nav>
