@@ -13,6 +13,7 @@ export default function Home() {
         src="https://placehold.co/640"
         dataSrc="/assets/home.webp"
         alt="Profile picture of site owner"
+        aspectRatio="1/1"
       />
       <h2 className="home__subtitle">{home.subtitle}</h2>
       <h1

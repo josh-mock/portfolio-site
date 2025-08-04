@@ -5,6 +5,7 @@ export default function LazyMedia({
   dataSrc,
   alt = "",
   className = "",
+  aspectRatio = "",
   ...props
 }) {
   const mediaRef = useRef();
@@ -46,6 +47,7 @@ export default function LazyMedia({
         src={src}
         data-src={dataSrc}
         className={`${className} lazy loading`}
+        style={{ aspectRatio, width: "100%" }}
         muted
         autoPlay
         loop
@@ -66,4 +68,3 @@ export default function LazyMedia({
     />
   );
 }
-

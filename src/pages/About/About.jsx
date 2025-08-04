@@ -27,6 +27,7 @@ export default function About() {
             src="https://placehold.co/720"
             dataSrc="/assets/about.webp"
             alt="Portrait of the site owner"
+            aspectRatio="1/1"
           />
         </div>
       </section>
