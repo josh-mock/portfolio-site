@@ -4,8 +4,7 @@
 
 .btn-wrapper:hover .btn {
   transform: translateY(-3px);
-  box-shadow: 0 7px 14px var(--clr-btn-shadow-hover),
-    0 5px 5px var(--clr-btn-shadow-hover), 0 0 15px -5px var(--clr-btn);
+  box-shadow: 0 3px 6px var(--clr-btn-shadow-hover);
 }
 
 .btn {
@@ -17,8 +16,7 @@
   color: var(--clr-btn-text);
   padding: 0.5em 1em;
   border-radius: 6px;
-  box-shadow: 0 5px 10px var(--clr-btn-shadow), 0 3px 3px var(--clr-btn-shadow),
-    0 0 12.5px -5px var(--clr-btn);
+  box-shadow: 0 6px 12px var(--clr-btn-shadow), 0 0 8px var(--clr-btn-shadow);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
