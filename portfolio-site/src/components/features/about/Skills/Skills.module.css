@@ -1,0 +1,22 @@
+.skills__container {
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.skills__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding-left: 1em;
+  flex: 1;
+}
+
+.skills__item {
+  font-size: var(--size-sm);
+  color: var(--clr-description);
+}
+
+.skills__item::before {
+  content: "";
+  margin-left: 0.5em;
+}
