@@ -50,7 +50,7 @@
 
   .header__themeToggle {
     display: block;
-    color: var(--clr-theme-toggle);
+    color: var(--clr-themeToggle);
     width: var(--size-base);
     height: var(--size-base);
   }
@@ -133,7 +133,7 @@
   display: block;
   width: var(--size-xl);
   height: var(--size-xl);
-  color: var(--clr-theme-toggle);
+  color: var(--clr-themeToggle);
 }
 
 .mobileNav__btn {

@@ -1,0 +1,27 @@
+import "@/styles/reset.css";
+import "@/styles/globals.css";
+import "@/styles/utils.css";
+import Header from "@/components/layout/Header";
+
+export const metadata = {
+  title: "Josh Mock",
+  description: "Check out my web developer portfolio",
+};
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <head>
+        <link
+          href="https://api.fontshare.com/v2/css?f[]=general-sans@200,201,300,301,400,401,500,501,600,601,700,701,1,2&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+
+      <body className="general-sans">
+        <Header />
+        {children}
+      </body>
+    </html>
+  );
+}
