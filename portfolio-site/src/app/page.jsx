@@ -1,5 +1,5 @@
-import styles from "@/app/Home.module.css";
-import GitHubBtn from "@/components/ui/buttons/GitHub/GitHubBtn";
+import styles from "@/app/home.module.css";
+import GitHubBtn from "@/components/ui/buttons/GitHub";
 import LinkedInBtn from "@/components/ui/buttons/LinkedIn";
 import Image from "next/image";
 import Link from "next/link";
