@@ -50,6 +50,14 @@
   gap: 0.2em;
 }
 
+.contact__form-group--buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
 .contact__form-label {
   color: var(--clr-form-label);
   font-size: var(--size-sm);
@@ -145,10 +153,8 @@
     grid-area: message;
   }
 
-  .contact__form-group--button {
+  .contact__form-group--buttons {
     grid-area: button;
-    display: flex;
-    justify-content: center;
   }
 }
 

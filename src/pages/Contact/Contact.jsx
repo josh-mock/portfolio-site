@@ -4,7 +4,7 @@ import toast, { Toaster } from "react-hot-toast";
 import * as yup from "yup";
 import "./Contact.css";
 import Footer from "../../components/Footer/Footer";
-import contact from "../../data/contact.json"
+import contact from "../../data/contact.json";
 const schema = yup
   .object({
     name: yup
@@ -73,8 +73,7 @@ export default function Contact() {
       <Toaster />
       <section id="contact" className="contact container section">
         <h1 className="contact__title">{contact.title}</h1>
-        <p className="contact__description">{contact.copy}
-        </p>
+        <p className="contact__description">{contact.copy}</p>
 
         <form
           className="contact__form"
@@ -145,13 +144,21 @@ export default function Contact() {
                 {errors.message?.message}
               </span>
             </div>
-            <div className="contact__form-group contact__form-group--button">
+            <div className="contact__form-group contact__form-group--buttons">
               <button
                 className="contact__form-btn btn"
                 type="submit"
                 disabled={isSubmitting || !isValid || !isDirty}
               >
                 Send message
+              </button>
+              <button
+                className="contact__form-btn btn"
+                type="button"
+                onClick={() => reset()}
+                disabled={isSubmitting}
+              >
+                Reset
               </button>
             </div>
           </div>
