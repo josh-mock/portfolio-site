@@ -26,7 +26,7 @@ npm run dev
 
 - [React Hook Form](https://react-hook-form.com/)
 
-- [Yup](https://github.com/jquense/yup)
+- [Yup](https://www.npmjs.com/package/yup)
 
 - [Font Awesome](https://fontawesome.com/)
 
