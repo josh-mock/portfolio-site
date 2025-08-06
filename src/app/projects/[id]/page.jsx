@@ -5,6 +5,10 @@ import styles from "./project.module.css";
 import Chain from "@/components/ui/links/Chain";
 import GitHubIconLink from "@/components/ui/links/GitHub";
 
+export async function generateStaticParams() {
+  return Object.keys(projects).map((id) => ({ id }));
+}
+
 export default async function ProjectPage({ params }) {
   const { id } = await params;
   const project = projects[id];
