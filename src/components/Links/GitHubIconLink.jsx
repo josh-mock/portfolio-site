@@ -1,6 +1,0 @@
-import GitHubIcon from "../Icons/GitHubIcon";
-import IconLink from "../../../portfolio-site/src/components/ui/links/IconLink";
-
-export default function GitHubIconLink({ className, href }) {
-  return <IconLink className={className} href={href} icon={<GitHubIcon />} />;
-}
