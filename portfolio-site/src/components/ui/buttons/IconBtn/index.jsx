@@ -5,7 +5,7 @@ export default function IconBtn({ href, icon, className, ariaLabel }) {
 
   if (isInternalLink) {
     return (
-      <Link to={href} className={className} aria-label={ariaLabel}>
+      <Link href={href} className={className} aria-label={ariaLabel}>
         {icon}
       </Link>
     );

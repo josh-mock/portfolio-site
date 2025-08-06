@@ -1,0 +1,50 @@
+{
+    "id": "multilingual-wordle",
+    "title": "Multilingual Wordle",
+    "subtitle": "Portfolio Project",
+    "demoUrl": "https://multilingual-wordle.netlify.app",
+    "gitHubUrl": "https://github.com/josh-mock/multilingual-wordle",
+    "timeline": "July 2025",
+    "projectType": "React SPA",
+    "cardDescription": "A multilingual homage to the popular word-guessing game. The app supports both left-to-right and right-to-left languages such as Arabic and Persian.",
+    "fullDescription": "<p>I love language and wanted to create a version of <a href=\"https://www.nytimes.com/games/wordle/index.html\" target=\"_blank\"><strong>Wordle</strong></a> in multiple languages.</p><p>This <strong>React</strong> app uses a translation provider to update content dynamically. The current setup uses an external API and <strong>Tanstack React Query</strong> to fetch a solution, while other languages use a static word list. The app supports both left-to-right and right-to-left languages.</p><p>To help manage translations and supported languages, I used <strong>TypeScript</strong> to enforce strict typing with the SupportedLang type, ensuring only valid language codes are used throughout the application and reducing the risk of runtime errors when handling multilingual features.</p>",
+    "techStack": [
+        "React",
+        "CSS",
+        "React Query",
+        "intl-messageformat",
+        "TypeScript"
+    ],
+    "cardImage": {
+        "src": "/projects/multilingual-wordle/card.webp",
+        "alt": "A game of Wordle",
+        "width": 900,
+        "height": 900
+    },
+    "images": [
+        {
+            "url": "/projects/multilingual-wordle/1.webm",
+            "alt": "A video showing a winning game",
+            "placeholderUrl": "https://placehold.co/1920x968",
+            "aspectRatio": "1920/968"
+        },
+        {
+            "url": "/projects/multilingual-wordle/2.webm",
+            "alt": "A video showing the dropdown selector to change languages",
+            "placeholderUrl": "https://placehold.co/1920x968",
+            "aspectRatio": "1920/968"
+        },
+        {
+            "url": "/projects/multilingual-wordle/3.webm",
+            "alt": "A video showing the modals for an invalid word, a too short word, and a word that has already been guessed",
+            "placeholderUrl": "https://placehold.co/1920x968",
+            "aspectRatio": "1920/968"
+        },
+        {
+            "url": "/projects/multilingual-wordle/4.webm",
+            "alt": "A video demonstrating the show/hide controls",
+            "placeholderUrl": "https://placehold.co/1920x968",
+            "aspectRatio": "1920/968"
+        }
+    ]
+}

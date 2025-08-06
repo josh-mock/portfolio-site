@@ -1,6 +1,6 @@
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import IconBtn from "./IconBtn";
+import IconBtn from "../IconBtn";
 
 export default function LinkBtn({
   className,
