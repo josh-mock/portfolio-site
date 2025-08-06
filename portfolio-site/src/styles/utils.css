@@ -28,16 +28,6 @@
   color: var(--clr-inline-link-hover);
 }
 
-@keyframes beat {
-  0%,
-  100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-}
-
 .container {
   width: 100%;
   margin-left: auto;
