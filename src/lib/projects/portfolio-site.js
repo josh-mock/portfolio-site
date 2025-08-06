@@ -1,4 +1,4 @@
-export default {
+const project = {
   id: "portfolio-site",
   title: "Portfolio Site",
   subtitle: "Portfolio Project",
@@ -37,3 +37,6 @@ export default {
     },
   ],
 };
+
+
+export default project;
