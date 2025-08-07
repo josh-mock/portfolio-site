@@ -20,9 +20,9 @@ export default async function ProjectPage({ params }) {
   return (
     <>
       <section className={`${styles.project} container section`}>
-        <h3 className={styles.project__subtitle}>{project.subtitle}</h3>
+        <h2 className={styles.project__subtitle}>{project.subtitle}</h2>
         <div className={styles.project__wrapper}>
-          <h2 className={styles.project__title}>{project.title}</h2>
+          <h1 className={styles.project__title}>{project.title}</h1>
           <Chain className={styles.project__link} href={project.demoUrl} />
           <GitHubIconLink
             className={styles.project__link}
@@ -36,7 +36,7 @@ export default async function ProjectPage({ params }) {
 
         <div className={styles.project__infoContainer}>
           <div>
-            <h3 className={styles.project__label}>Tech stack</h3>
+            <h2 className={styles.project__label}>Tech stack</h2>
             <ul className={styles.project__techStack}>
               {project.techStack.map((tech, i) => (
                 <li key={i} className={styles.project__info}>
@@ -46,11 +46,11 @@ export default async function ProjectPage({ params }) {
             </ul>
           </div>
           <div>
-            <h3 className={styles.project__label}>Project type</h3>
+            <h2 className={styles.project__label}>Project type</h2>
             <p className={styles.project__info}>{project.projectType}</p>
           </div>
           <div>
-            <h3 className={styles.project__label}>Timeline</h3>
+            <h2 className={styles.project__label}>Timeline</h2>
             <p className={styles.project__info}>{project.timeline}</p>
           </div>
         </div>

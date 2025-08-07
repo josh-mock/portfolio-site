@@ -1,7 +1,7 @@
-import "@/styles/reset.css";
-import "@/styles/globals.css";
-import "@/styles/utils.css";
 import Header from "@/components/layout/Header";
+import "@/styles/globals.css";
+import "@/styles/reset.css";
+import "@/styles/utils.css";
 
 export const metadata = {
   title: "Josh Mock",

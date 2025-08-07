@@ -1,7 +1,6 @@
+import Skills from "@/components/features/about/Skills";
 import Footer from "@/components/layout/Footer";
 import styles from "./about.module.css";
-import Skills from "@/components/features/about/Skills";
-import LazyMedia from "@/components/ui/LazyMedia";
 
 export default function page() {
   const config = {
@@ -49,14 +48,14 @@ export default function page() {
     <>
       <section id="about" className={`${styles.about} container section`}>
         <div className={styles.about__content}>
-          <h2 className={styles.about__title}>About</h2>
+          <h1 className={styles.about__title}>About</h1>
           {config.paragraphs.map((p, index) => (
             <p key={index} className={styles.about__description}>
               {p}
             </p>
           ))}
           <hr className={styles.about__hr} />
-          <h3 className={styles.about__subtitle}>Skills</h3>
+          <h2 className={styles.about__subtitle}>Skills</h2>
           <Skills skills={config.skills} listLength={3} />
         </div>
         <div className={styles.about__imgWrapper}>
