@@ -60,13 +60,12 @@ export default function page() {
           <Skills skills={config.skills} listLength={3} />
         </div>
         <div className={styles.about__imgWrapper}>
-          <LazyMedia
-            src="https://placehold.co/720"
-            dataSrc="/assets/about.webp"
+          <img
+            src="/assets/about.webp"
             alt="Portrait of the site owner"
-            aspectRatio="1/1"
             width={720}
             height={720}
+            className={styles.about__img}
           />
         </div>
       </section>
