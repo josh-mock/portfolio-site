@@ -28,6 +28,7 @@ const project = {
   },
   images: [
     <img
+      key={1}
       src="/projects/portfolio-site/1.webp"
       alt="Portfolio site homepage"
       width={1920}
