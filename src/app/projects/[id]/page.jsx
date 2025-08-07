@@ -13,9 +13,9 @@ export default async function ProjectPage({ params }) {
   const { id } = await params;
   const project = projects[id];
 
-  //   if (!project) {
-  //     notFound();
-  //   }
+    if (!project) {
+      notFound();
+    }
 
   return (
     <>
