@@ -1,20 +1,19 @@
 import styles from "@/app/home.module.css";
 import GitHubBtn from "@/components/ui/buttons/GitHub";
 import LinkedInBtn from "@/components/ui/buttons/LinkedIn";
-import LazyImg from "@/components/ui/media/LazyImg";
 import Link from "next/link";
-import img from "../../public/assets/home.webp"
-
+import LazyMedia from "@/components/ui/LazyMedia";
 export default function Home() {
   return (
     <section className={`${styles.home} container`}>
-      {/* <LazyImg
+      <LazyMedia
         className={styles.home__img}
-        src={img}
-        aspectRatio="1/1"
+        src="https://placehold.co/640"
+        dataSrc="/assets/home.webp"
         alt="Profile picture of site owner"
-      /> */}
-      <img src="/assets/home.webp" alt="" className={`${styles.home__img} lazy`}/>
+        aspectRatio="1/1"
+      />
+
       <h2 className={styles.home__subtitle}>Hi, I'm Josh 👋</h2>
       <h1 className={styles.home__title}>
         FULL-STACK
