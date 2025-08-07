@@ -1,7 +1,8 @@
 import Footer from "@/components/layout/Footer";
 import styles from "./about.module.css";
 import Skills from "@/components/features/about/Skills";
-import Image from "next/image";
+import LazyMedia from "@/components/ui/LazyMedia";
+
 export default function page() {
   const config = {
     paragraphs: [
@@ -59,12 +60,11 @@ export default function page() {
           <Skills skills={config.skills} listLength={3} />
         </div>
         <div className={styles.about__imgWrapper}>
-          <Image
-            src={"/assets/about.webp"}
-            width={720}
-            height={720}
+          <LazyMedia
+            src="https://placehold.co/720"
+            dataSrc="/assets/about.webp"
             alt="Portrait of the site owner"
-            className={styles.about__img}
+            aspectRatio="1/1"
           />
         </div>
       </section>
