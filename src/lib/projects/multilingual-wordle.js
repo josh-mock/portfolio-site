@@ -48,38 +48,50 @@ const project = {
     alt: "A game of Wordle",
   },
   images: [
-    {
-      src: "/projects/multilingual-wordle/1.webm",
-      alt: "A video showing a winning game",
-      placeholder: "https://placehold.co/1920x968.png",
-      aspectRatio: "1920/968",
-      width: 1920,
-      height: 968,
-    },
-    {
-      src: "/projects/multilingual-wordle/2.webm",
-      alt: "A video showing the dropdown selector to change languages",
-      placeholder: "https://placehold.co/1920x968.png",
-      aspectRatio: "1920/968",
-      width: 1920,
-      height: 968,
-    },
-    {
-      src: "/projects/multilingual-wordle/3.webm",
-      alt: "A video showing the modals for an invalid word, a too short word, and a word that has already been guessed",
-      placeholder: "https://placehold.co/1920x968.png",
-      aspectRatio: "1920/968",
-      width: 1920,
-      height: 968,
-    },
-    {
-      src: "/projects/multilingual-wordle/4.webm",
-      alt: "A video demonstrating the show/hide controls",
-      placeholder: "https://placehold.co/1920x968.png",
-      aspectRatio: "1920/968",
-      width: 1920,
-      height: 968,
-    },
+    <video
+      src="/projects/multilingual-wordle/1.webm"
+      alt="A video showing a winning game"
+      width={1920}
+      height={968}
+      autoPlay
+      loop
+      muted
+      playsInline
+      preload="auto"
+    />,
+    <video
+      src="/projects/multilingual-wordle/2.webm"
+      alt="A video showing the dropdown selector to change languages"
+      width={1920}
+      height={968}
+      autoPlay
+      loop
+      muted
+      playsInline
+      preload="auto"
+    />,
+    <video
+      src="/projects/multilingual-wordle/3.webm"
+      alt="A video showing the modals for an invalid word, a too short word, and a word that has already been guessed"
+      width={1920}
+      height={968}
+      autoPlay
+      loop
+      muted
+      playsInline
+      preload="auto"
+    />,
+    <video
+      src="/projects/multilingual-wordle/4.webm"
+      alt="A video demonstrating the show/hide controls"
+      width={1920}
+      height={968}
+      autoPlay
+      loop
+      muted
+      playsInline
+      preload="auto"
+    />,
   ],
 };
 

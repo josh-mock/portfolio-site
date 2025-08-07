@@ -27,12 +27,12 @@ const project = {
     alt: "Portfolio site homepage",
   },
   images: [
-    {
-      src: "/projects/portfolio-site/1.webp",
-      alt: "Portfolio site homepage",
-      placeholder: "https://placehold.co/1920x968",
-      aspectRatio: "1920/968",
-    },
+    <img
+      src="/projects/portfolio-site/1.webp"
+      alt="Portfolio site homepage"
+      width={1920}
+      height={968}
+    />,
   ],
 };
 

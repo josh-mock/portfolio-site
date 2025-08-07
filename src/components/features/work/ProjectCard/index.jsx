@@ -1,8 +1,7 @@
-import styles from "./ProjectCard.module.css";
 import GitHubBtn from "@/components/ui/buttons/GitHub";
 import InfoBtn from "@/components/ui/buttons/Info";
 import LinkBtn from "@/components/ui/buttons/Link";
-import LazyMedia from "@/components/ui/LazyMedia";
+import styles from "./ProjectCard.module.css";
 
 export default function ProjectCard({ project, reverse }) {
   return (
