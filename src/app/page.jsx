@@ -1,21 +1,20 @@
 import styles from "@/app/home.module.css";
 import GitHubBtn from "@/components/ui/buttons/GitHub";
 import LinkedInBtn from "@/components/ui/buttons/LinkedIn";
-import Image from "next/image";
+import LazyImg from "@/components/ui/media/LazyImg";
 import Link from "next/link";
-import homeImg from "../../public/assets/home.webp";
+import img from "../../public/assets/home.webp"
 
 export default function Home() {
   return (
     <section className={`${styles.home} container`}>
-      <Image
+      {/* <LazyImg
         className={styles.home__img}
-        src={homeImg}
-        width={640}
-        height={640}
+        src={img}
+        aspectRatio="1/1"
         alt="Profile picture of site owner"
-        priority
-      />
+      /> */}
+      <img src="/assets/home.webp" alt="" className={`${styles.home__img} lazy`}/>
       <h2 className={styles.home__subtitle}>Hi, I'm Josh 👋</h2>
       <h1 className={styles.home__title}>
         FULL-STACK
