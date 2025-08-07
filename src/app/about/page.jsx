@@ -65,6 +65,8 @@ export default function page() {
             dataSrc="/assets/about.webp"
             alt="Portrait of the site owner"
             aspectRatio="1/1"
+            width={720}
+            height={720}
           />
         </div>
       </section>

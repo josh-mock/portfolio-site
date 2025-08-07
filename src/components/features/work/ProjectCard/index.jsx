@@ -13,6 +13,8 @@ export default function ProjectCard({ project, reverse }) {
           dataSrc={project.cardImage.src}
           alt={project.cardImage.alt}
           aspectRatio={project.cardImage.aspectRatio}
+          width={project.cardImage.width}
+          height={project.cardImage.height}
         />
       </div>
       <div className={styles.projectCard__content}>

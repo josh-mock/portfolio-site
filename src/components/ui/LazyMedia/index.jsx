@@ -7,11 +7,13 @@ export default function LazyMedia({
   alt = "",
   className = "",
   aspectRatio = "",
+  width,
+  height,
   ...props
 }) {
   const mediaRef = useRef();
 
-  const isVideo = /\.(webm|mp4|ogg)$/i.test(dataSrc);
+  const isVideo = /\.(webm|mp4|ogg)$/i.test(dataSrc || src);
 
   useEffect(() => {
     const media = mediaRef.current;
@@ -23,7 +25,7 @@ export default function LazyMedia({
           const target = entry.target;
           target.src = target.dataset.src;
 
-          if (isVideo) {
+          if (target.tagName === "VIDEO") {
             target.load();
           }
 
@@ -36,19 +38,18 @@ export default function LazyMedia({
 
     observer.observe(media);
 
-    return () => {
-      observer.disconnect();
-    };
-  }, [isVideo]);
+    return () => observer.disconnect();
+  }, []);
 
   if (isVideo) {
     return (
       <video
         ref={mediaRef}
-        src={src}
         data-src={dataSrc}
         className={`${className} lazy loading`}
-        style={{ aspectRatio, width: "100%" }}
+        style={{ aspectRatio }}
+        width={width}
+        height={height}
         muted
         autoPlay
         loop
@@ -61,11 +62,12 @@ export default function LazyMedia({
   return (
     <img
       ref={mediaRef}
-      src={src}
       data-src={dataSrc}
       alt={alt}
       className={`${className} lazy loading`}
       style={{ aspectRatio }}
+      width={width}
+      height={height}
       {...props}
     />
   );

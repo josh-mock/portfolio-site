@@ -12,6 +12,8 @@ export default function Home() {
         dataSrc="/assets/home.webp"
         alt="Profile picture of site owner"
         aspectRatio="1/1"
+        width={640}
+        height={640}
       />
 
       <h2 className={styles.home__subtitle}>Hi, I'm Josh 👋</h2>

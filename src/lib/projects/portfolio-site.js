@@ -27,6 +27,8 @@ const project = {
     alt: "Portfolio site homepage",
     placeholder: "https://placehold.co/900",
     aspectRatio: "1/1",
+    width: 900,
+    height: 900,
   },
   images: [
     {

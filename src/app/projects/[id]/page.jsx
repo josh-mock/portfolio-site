@@ -62,6 +62,7 @@ export default async function ProjectPage({ params }) {
                 alt={media.alt}
                 dataSrc={media.src}
                 aspectRatio={media.aspectRatio}
+                width={media.width}
               />
             </div>
           ))}
