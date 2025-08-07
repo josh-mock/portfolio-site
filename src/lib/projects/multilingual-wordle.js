@@ -46,10 +46,6 @@ const project = {
   cardImage: {
     src: "/projects/multilingual-wordle/card.webp",
     alt: "A game of Wordle",
-    placeholder: "https://placehold.co/900",
-    aspectRatio: "1/1",
-    width: 900,
-    height: 900,
   },
   images: [
     {
