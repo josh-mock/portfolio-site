@@ -25,18 +25,17 @@ const project = {
   cardImage: {
     src: "/projects/portfolio-site/card.webp",
     alt: "Portfolio site homepage",
-    width: 900,
-    height: 900,
+    dataSrc: "https://placehold.co/900",
+    aspectRatio: "1/1",
   },
   images: [
     {
       src: "/projects/portfolio-site/1.webp",
       alt: "Portfolio site homepage",
-      width: 1920,
-      height: 968,
+      dataSrc: "https://placehold.co/1920x968",
+      aspectRatio: "1920/968",
     },
   ],
 };
-
 
 export default project;
