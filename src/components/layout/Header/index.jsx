@@ -161,6 +161,7 @@ export default function Header() {
                   href="/resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="A link to a pdf"
                 >
                   Resume
                 </a>
