@@ -1,9 +1,9 @@
 import Footer from "@/components/layout/Footer";
 import projects from "@/lib/projects";
-import Image from "next/image";
 import styles from "./project.module.css";
 import Chain from "@/components/ui/links/Chain";
 import GitHubIconLink from "@/components/ui/links/GitHub";
+import LazyMedia from "@/components/ui/LazyMedia";
 
 export async function generateStaticParams() {
   return Object.keys(projects).map((id) => ({ id }));
@@ -57,18 +57,12 @@ export default async function ProjectPage({ params }) {
         <div className={styles.project__imgContainer}>
           {project.images.map((media, i) => (
             <div className={styles.project__imgWrapper} key={i}>
-              {media.video ? (
-                <video src={media.src} muted autoPlay loop playsInline>
-                  Your browser does not support the video tag.
-                </video>
-              ) : (
-                <Image
-                  src={media.src}
-                  alt={media.alt}
-                  width={media.width}
-                  height={media.height}
-                />
-              )}
+              <LazyMedia
+                src={media.placeholder}
+                alt={media.alt}
+                dataSrc={media.src}
+                aspectRatio={media.aspectRatio}
+              />
             </div>
           ))}
         </div>

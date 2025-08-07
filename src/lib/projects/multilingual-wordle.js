@@ -46,32 +46,32 @@ const project = {
   cardImage: {
     src: "/projects/multilingual-wordle/card.webp",
     alt: "A game of Wordle",
-    dataSrc: "https://placehold.co/900",
+    placeholder: "https://placehold.co/900",
     aspectRatio: "1/1",
   },
   images: [
     {
       src: "/projects/multilingual-wordle/1.webm",
       alt: "A video showing a winning game",
-      dataSrc: "https://placehold.co/1920x968",
+      placeholder: "https://placehold.co/1920x968",
       aspectRatio: "1920/968",
     },
     {
       src: "/projects/multilingual-wordle/2.webm",
       alt: "A video showing the dropdown selector to change languages",
-      dataSrc: "https://placehold.co/1920x968",
+      placeholder: "https://placehold.co/1920x968",
       aspectRatio: "1920/968",
     },
     {
       src: "/projects/multilingual-wordle/3.webm",
       alt: "A video showing the modals for an invalid word, a too short word, and a word that has already been guessed",
-      dataSrc: "https://placehold.co/1920x968",
+      placeholder: "https://placehold.co/1920x968",
       aspectRatio: "1920/968",
     },
     {
       src: "/projects/multilingual-wordle/4.webm",
       alt: "A video demonstrating the show/hide controls",
-      dataSrc: "https://placehold.co/1920x968",
+      placeholder: "https://placehold.co/1920x968",
       aspectRatio: "1920/968",
     },
   ],

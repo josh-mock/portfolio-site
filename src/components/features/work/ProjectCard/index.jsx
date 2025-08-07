@@ -9,8 +9,8 @@ export default function ProjectCard({ project, reverse }) {
     <div className={`${styles.projectCard} ${reverse ? styles.reverse : ""}`}>
       <div className={styles.projectCard__imgWrapper}>
         <LazyMedia
-          src={project.cardImage.src}
-          dataSrc={project.cardImage.dataSrc}
+          src={project.cardImage.placeholder}
+          dataSrc={project.cardImage.src}
           alt={project.cardImage.alt}
           aspectRatio={project.cardImage.aspectRatio}
         />
