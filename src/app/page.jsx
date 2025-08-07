@@ -2,16 +2,14 @@ import styles from "@/app/home.module.css";
 import GitHubBtn from "@/components/ui/buttons/GitHub";
 import LinkedInBtn from "@/components/ui/buttons/LinkedIn";
 import Link from "next/link";
-import LazyMedia from "@/components/ui/LazyMedia";
+
 export default function Home() {
   return (
     <section className={`${styles.home} container`}>
-      <LazyMedia
+      <img
         className={styles.home__img}
-        src="https://placehold.co/640"
-        dataSrc="/assets/home.webp"
+        src="/assets/home.webp"
         alt="Profile picture of site owner"
-        aspectRatio="1/1"
         width={640}
         height={640}
       />
