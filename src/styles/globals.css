@@ -131,12 +131,7 @@
 
   /* Badges */
   --clr-badge-text: var(--clr-white);
-  --clr-badge: hsla(
-    var(--clr-delft-blue-hue),
-    var(--clr-delft-blue-saturation),
-    var(--clr-delft-blue-lightness),
-    0.6
-  );
+  --clr-badge: var(--clr-palatinate-blue);
 
   /* FORM */
   --clr-form-input-focus: var(--clr-palatinate-blue);
@@ -229,12 +224,7 @@
 
   /* BADGES */
   --clr-badge-text: var(--clr-white);
-  --clr-badge: hsla(
-    var(--clr-persian-indigo-hue),
-    var(--clr-persian-indigo-saturation),
-    var(--clr-persian-indigo-lightness),
-    0.5
-  );
+  --clr-badge: var(--clr-palatinate-blue);
 
   /* FORM */
   --clr-form-input-focus: var(--clr-tropical-indigo);

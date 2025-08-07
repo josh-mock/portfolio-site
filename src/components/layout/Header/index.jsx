@@ -70,17 +70,14 @@ export default function Header() {
                 <GitHubBtn className={`${styles.header__btn} btn`} />
               </div>
             </li>
-            <li
-              className={styles.header__line}
-              aria-label="Visual divider"
-            ></li>
+            <li className={styles.header__line} role="separator"></li>
             <li>
               <ThemeToggle className={styles.header__themeToggle} />
             </li>
             <li>
               <div className={"btn-wrapper"}>
                 <a
-                  className={`${styles.header__btn} btn`}
+                  className={`${styles.mobileNav__btn} btn`}
                   href="/resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
