@@ -1,5 +1,5 @@
 "use client";
-import styles from "@/app/about/about.module.css";
+import styles from "@/app/about/contact.module.css";
 import Footer from "@/components/layout/Footer";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
