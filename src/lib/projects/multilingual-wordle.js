@@ -15,6 +15,7 @@ const project = {
         <a
           href="https://www.nytimes.com/games/wordle/index.html"
           target="_blank"
+          rel="noreferrer noopener"
         >
           <strong>Wordle</strong>
         </a>{" "}
@@ -46,6 +47,8 @@ const project = {
   cardImage: {
     src: "/projects/multilingual-wordle/card.webp",
     alt: "A game of Wordle",
+    placeholder: "https://placehold.co/900x900/DDD/DDD",
+
   },
   images: [
     <video

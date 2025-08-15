@@ -5,7 +5,7 @@ const project = {
   demoUrl: "https://josh-mock.com",
   gitHubUrl: "https://github.com/josh-mock/portfolio-site",
   timeline: "June 2025-Present",
-  projectType: "React SPA",
+  projectType: "Next.js static",
   cardDescription:
     "This is my landing page, showcasing my software engineering journey so far.",
   fullDescription: (
@@ -14,6 +14,7 @@ const project = {
       <a
         target="_blank"
         href="https://www.youtube.com/watch?v=dLDn_k8GmaU&ab_channel=SlayingTheDragon"
+        rel="noopener noreferrer"
       >
         <strong>this tutorial</strong>
       </a>{" "}
@@ -21,15 +22,17 @@ const project = {
       greater modularisation.
     </p>
   ),
-  techStack: ["React", "CSS", "React Router", "React Hook Form", "Yup"],
+  techStack: ["Next.js", "React Hook Form", "Vercel"],
   cardImage: {
     src: "/projects/portfolio-site/card.webp",
+    placeholder: "https://placehold.co/900x900/DDD/DDD",
     alt: "Portfolio site homepage",
   },
   images: [
     <img
       key={1}
       src="/projects/portfolio-site/1.webp"
+      placeholder="https://placehold.co/1920x968/DDD/DDD"
       alt="Portfolio site homepage"
       width={1920}
       height={968}

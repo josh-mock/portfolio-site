@@ -2,18 +2,27 @@ import GitHubBtn from "@/components/ui/buttons/GitHub";
 import InfoBtn from "@/components/ui/buttons/Info";
 import LinkBtn from "@/components/ui/buttons/Link";
 import styles from "./ProjectCard.module.css";
+import LazyImage from "@/components/ui/media/LazyImage";
 
 export default function ProjectCard({ project, reverse }) {
   return (
     <div className={`${styles.projectCard} ${reverse ? styles.reverse : ""}`}>
       <div className={styles.projectCard__imgWrapper}>
-        <img
+        {/* <img
           className={styles.projectCard__img}
           src={project.cardImage.src}
           alt={project.cardImage.alt}
           width={900}
           height={900}
-        />
+        /> */}
+        <LazyImage
+          className={styles.projectCard__img}
+          src={project.cardImage.src}
+          alt={project.cardImage.alt}
+          placeholder={project.cardImage.placeholder}
+          width={900}
+          height={900}
+        ></LazyImage>
       </div>
       <div className={styles.projectCard__content}>
         <h2 className={styles.projectCard__title}>{project.title}</h2>
