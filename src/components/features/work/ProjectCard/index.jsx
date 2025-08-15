@@ -1,28 +1,24 @@
+// TODO: Move button wrappers into component
+// TODO: change . import to @
 import GitHubBtn from "@/components/ui/buttons/GitHub";
 import InfoBtn from "@/components/ui/buttons/Info";
 import LinkBtn from "@/components/ui/buttons/Link";
 import styles from "./ProjectCard.module.css";
-import LazyImage from "@/components/ui/media/LazyImage";
+import LazyMedia from "@/components/ui/media/LazyMedia";
 
 export default function ProjectCard({ project, reverse }) {
   return (
     <div className={`${styles.projectCard} ${reverse ? styles.reverse : ""}`}>
       <div className={styles.projectCard__imgWrapper}>
-        {/* <img
+        <LazyMedia
           className={styles.projectCard__img}
           src={project.cardImage.src}
           alt={project.cardImage.alt}
+          placeholder={"https://placehold.co/900x900/DDD/DDD"}
           width={900}
           height={900}
-        /> */}
-        <LazyImage
-          className={styles.projectCard__img}
-          src={project.cardImage.src}
-          alt={project.cardImage.alt}
-          placeholder={project.cardImage.placeholder}
-          width={900}
-          height={900}
-        ></LazyImage>
+          type="image"
+        />
       </div>
       <div className={styles.projectCard__content}>
         <h2 className={styles.projectCard__title}>{project.title}</h2>

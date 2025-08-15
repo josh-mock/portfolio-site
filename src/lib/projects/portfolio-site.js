@@ -29,14 +29,11 @@ const project = {
     alt: "Portfolio site homepage",
   },
   images: [
-    <img
-      key={1}
-      src="/projects/portfolio-site/1.webp"
-      placeholder="https://placehold.co/1920x968/DDD/DDD"
-      alt="Portfolio site homepage"
-      width={1920}
-      height={968}
-    />,
+    {
+      src: "/projects/portfolio-site/1.webp",
+      alt: "Portfolio site homepage",
+      type: "image",
+    },
   ],
 };
 

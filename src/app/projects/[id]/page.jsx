@@ -4,6 +4,7 @@ import styles from "./project.module.css";
 import Chain from "@/components/ui/links/Chain";
 import GitHubIconLink from "@/components/ui/links/GitHub";
 import { cloneElement } from "react";
+import LazyMedia from "@/components/ui/media/LazyMedia";
 
 export async function generateStaticParams() {
   return Object.keys(projects).map((id) => ({ id }));
@@ -57,9 +58,16 @@ export default async function ProjectPage({ params }) {
         <div className={styles.project__imgContainer}>
           {project.images.map((media, i) => (
             <div className={styles.project__imgWrapper} key={i}>
-              {cloneElement(media, {
-                className: styles.project__img,
-              })}
+              {
+                <LazyMedia
+                  className={styles.project__img}
+                  src={media.src}
+                  placeholder={"https://placehold.co/1920x968/DDD/DDD"}
+                  width={1920}
+                  height={968}
+                  type={media.type}
+                />
+              }
             </div>
           ))}
         </div>

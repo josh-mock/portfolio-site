@@ -1,7 +1,7 @@
 import Skills from "@/components/features/about/Skills";
 import Footer from "@/components/layout/Footer";
 import styles from "./about.module.css";
-import LazyImage from "@/components/ui/media/LazyImage";
+import LazyMedia from "@/components/ui/media/LazyMedia";
 
 export default function page() {
   const config = {
@@ -60,13 +60,14 @@ export default function page() {
           <Skills skills={config.skills} listLength={3} />
         </div>
         <div className={styles.about__imgWrapper}>
-          <LazyImage
+          <LazyMedia
             src="/assets/about.webp"
             placeholder="https://placehold.co/720x720/DDD/DDD"
             alt="Portrait of the site owner"
             width={720}
             height={720}
             className={styles.about__img}
+            type="image"
           />
         </div>
       </section>

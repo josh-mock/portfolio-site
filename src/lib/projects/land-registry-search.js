@@ -51,57 +51,13 @@ const project = {
   cardImage: {
     src: "/projects/land-registry-search/card.webp",
     alt: "A search result for National Highways Company LTD",
-    placeholder: "https://placehold.co/900x900/DDD/DDD",
   },
   images: [
-    <video
-      key={1}
-      src="/projects/multilingual-wordle/1.webm"
-      alt="A video showing a winning game"
-      width={1920}
-      height={968}
-      autoPlay
-      loop
-      muted
-      playsInline
-      preload="auto"
-    />,
-    <video
-      key={2}
-      src="/projects/multilingual-wordle/2.webm"
-      alt="A video showing the dropdown selector to change languages"
-      width={1920}
-      height={968}
-      autoPlay
-      loop
-      muted
-      playsInline
-      preload="auto"
-    />,
-    <video
-      key={3}
-      src="/projects/multilingual-wordle/3.webm"
-      alt="A video showing the modals for an invalid word, a too short word, and a word that has already been guessed"
-      width={1920}
-      height={968}
-      autoPlay
-      loop
-      muted
-      playsInline
-      preload="auto"
-    />,
-    <video
-      key={4}
-      src="/projects/multilingual-wordle/4.webm"
-      alt="A video demonstrating the show/hide controls"
-      width={1920}
-      height={968}
-      autoPlay
-      loop
-      muted
-      playsInline
-      preload="auto"
-    />,
+    {
+      src: "https://placehold.co/1920x968/DDD/DDD",
+      alt: "A video showing a winning game",
+      type: "image",
+    },
   ],
 };
 
