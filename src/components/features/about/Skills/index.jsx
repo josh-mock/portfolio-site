@@ -1,4 +1,4 @@
-import styles from "./Skills.module.css";
+import styles from "@/components/features/about/Skills/Skills.module.css";
 
 export default function Skills({ skills, listLength }) {
   return (

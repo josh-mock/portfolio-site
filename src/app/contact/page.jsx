@@ -1,10 +1,11 @@
 "use client";
+import styles from "@/app/about/about.module.css";
 import Footer from "@/components/layout/Footer";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
 import toast, { Toaster } from "react-hot-toast";
 import * as yup from "yup";
-import styles from "./contact.module.css";
+
 const schema = yup
   .object({
     name: yup

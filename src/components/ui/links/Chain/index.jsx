@@ -1,5 +1,5 @@
-import LinkIcon from "../../icons/Link";
-import IconLink from "../IconLink";
+import LinkIcon from "@/components/ui/icons/Link";
+import IconLink from "@/components/ui/links/IconLink";
 
 export default function Chain({ href, className }) {
   return (

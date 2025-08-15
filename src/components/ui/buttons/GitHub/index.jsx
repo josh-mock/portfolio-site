@@ -1,7 +1,7 @@
+import IconBtn from "@/components/ui/buttons/IconBtn";
+import { GITHUB } from "@/lib/constants";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { GITHUB } from "@/lib/constants";
-import IconBtn from "../IconBtn";
 
 export default function GitHubBtn({
   className,

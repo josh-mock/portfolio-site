@@ -1,6 +1,6 @@
+import IconBtn from "@/components/ui/buttons/IconBtn";
 import { faCircleInfo } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import IconBtn from "../IconBtn";
 
 export default function InfoBtn({
   className,

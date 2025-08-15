@@ -1,6 +1,6 @@
+import styles from "@/components/layout/Footer/Footer.module.css";
 import GitHubBtn from "@/components/ui/buttons/GitHub";
 import LinkedInBtn from "@/components/ui/buttons/LinkedIn";
-import styles from "./Footer.module.css";
 
 export default function Footer({ className }) {
   return (

@@ -1,7 +1,7 @@
+import IconBtn from "@/components/ui/buttons/IconBtn";
 import { LINKEDIN } from "@/lib/constants";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import IconBtn from "../IconBtn";
 
 export default function LinkedInBtn({
   className,

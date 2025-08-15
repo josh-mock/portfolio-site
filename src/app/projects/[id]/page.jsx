@@ -1,10 +1,9 @@
+import styles from "@/app/projects/[id]/project.module.css";
 import Footer from "@/components/layout/Footer";
-import projects from "@/lib/projects";
-import styles from "./project.module.css";
 import Chain from "@/components/ui/links/Chain";
 import GitHubIconLink from "@/components/ui/links/GitHub";
-import { cloneElement } from "react";
 import LazyMedia from "@/components/ui/media/LazyMedia";
+import projects from "@/lib/projects";
 
 export async function generateStaticParams() {
   return Object.keys(projects).map((id) => ({ id }));

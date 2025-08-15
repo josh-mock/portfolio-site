@@ -1,6 +1,7 @@
-import portfolioSite from "./portfolio-site.js";
-import multilingualWordle from "./multilingual-wordle.js";
-import landRegistrySearch from "./land-registry-search.js";
+import landRegistrySearch from "@/lib/projects/land-registry-search.js";
+import multilingualWordle from "@/lib/projects/multilingual-wordle.js";
+import portfolioSite from "@/lib/projects/portfolio-site.js";
+
 const projects = {
   [landRegistrySearch.id]: landRegistrySearch,
   [portfolioSite.id]: portfolioSite,

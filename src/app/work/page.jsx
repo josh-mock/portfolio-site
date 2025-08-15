@@ -1,7 +1,7 @@
-import styles from "./work.module.css";
+import styles from "@/app/work/work.module.css";
+import ProjectCard from "@/components/features/work/ProjectCard";
 import Footer from "@/components/layout/Footer";
 import projects from "@/lib/projects";
-import ProjectCard from "@/components/features/work/ProjectCard";
 
 export default function page() {
   const config = {

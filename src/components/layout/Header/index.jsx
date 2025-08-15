@@ -1,11 +1,11 @@
 "use client";
+import styles from "@/components/layout/Header/Header.module.css";
 import GitHubBtn from "@/components/ui/buttons/GitHub";
 import LinkedInBtn from "@/components/ui/buttons/LinkedIn";
 import MenuToggle from "@/components/ui/toggles/Menu";
 import ThemeToggle from "@/components/ui/toggles/Theme";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import styles from "./Header.module.css";
 
 export default function Header() {
   const [isMobileOpen, setIsMobileOpen] = useState(false);

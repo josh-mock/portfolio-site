@@ -1,6 +1,6 @@
+import styles from "@/app/about/about.module.css";
 import Skills from "@/components/features/about/Skills";
 import Footer from "@/components/layout/Footer";
-import styles from "./about.module.css";
 import LazyMedia from "@/components/ui/media/LazyMedia";
 
 export default function page() {

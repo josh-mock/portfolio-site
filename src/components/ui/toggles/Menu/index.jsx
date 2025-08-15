@@ -1,4 +1,4 @@
-import BarsIcon from "../../icons/Bars";
+import BarsIcon from "@/components/ui/icons/Bars";
 
 export default function MenuToggle({ onClick, className }) {
   return (

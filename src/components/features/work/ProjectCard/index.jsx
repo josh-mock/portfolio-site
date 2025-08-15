@@ -1,9 +1,8 @@
 // TODO: Move button wrappers into component
-// TODO: change . import to @
+import styles from "@/components/features/work/ProjectCard/ProjectCard.module.css";
 import GitHubBtn from "@/components/ui/buttons/GitHub";
 import InfoBtn from "@/components/ui/buttons/Info";
 import LinkBtn from "@/components/ui/buttons/Link";
-import styles from "./ProjectCard.module.css";
 import LazyMedia from "@/components/ui/media/LazyMedia";
 
 export default function ProjectCard({ project, reverse }) {

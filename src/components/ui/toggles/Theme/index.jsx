@@ -1,7 +1,7 @@
 "use client";
+import MoonIcon from "@/components/ui/icons/Moon";
+import SunIcon from "@/components/ui/icons/Sun";
 import { useEffect, useState } from "react";
-import MoonIcon from "../../icons/Moon";
-import SunIcon from "../../icons/Sun";
 
 export default function ThemeToggle({ className = "" }) {
   const [theme, setTheme] = useState("light");
