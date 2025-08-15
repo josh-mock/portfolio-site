@@ -5,21 +5,25 @@ export default function IconBtn({ href, icon, className, ariaLabel }) {
 
   if (isInternalLink) {
     return (
-      <Link href={href} className={className} aria-label={ariaLabel}>
-        {icon}
-      </Link>
+      <div className="btn-wrapper">
+        <Link href={href} className={className} aria-label={ariaLabel}>
+          {icon}
+        </Link>
+      </div>
     );
   }
 
   return (
-    <a
-      href={href}
-      className={className}
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label={ariaLabel}
-    >
-      {icon}
-    </a>
+    <div className="btn-wrapper">
+      <a
+        href={href}
+        className={className}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={ariaLabel}
+      >
+        {icon}
+      </a>
+    </div>
   );
 }

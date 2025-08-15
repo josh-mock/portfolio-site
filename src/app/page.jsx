@@ -33,12 +33,10 @@ export default function Home() {
             Reach out
           </Link>
         </div>
-        <div className="btn-wrapper">
-          <LinkedInBtn className={`${styles.home__btn} btn`} />
-        </div>
-        <div className="btn-wrapper">
-          <GitHubBtn className={`${styles.home__btn} btn`} />
-        </div>
+
+        <LinkedInBtn className={`${styles.home__btn} btn`} />
+
+        <GitHubBtn className={`${styles.home__btn} btn`} />
       </div>
     </section>
   );

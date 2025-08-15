@@ -61,14 +61,10 @@ export default function Header() {
             </li>
 
             <li>
-              <div className={"btn-wrapper"}>
-                <LinkedInBtn className={`${styles.header__btn} btn`} />
-              </div>
+              <LinkedInBtn className={`${styles.header__btn} btn`} />
             </li>
             <li>
-              <div className={"btn-wrapper"}>
-                <GitHubBtn className={`${styles.header__btn} btn`} />
-              </div>
+              <GitHubBtn className={`${styles.header__btn} btn`} />
             </li>
             <li className={styles.header__line} role="separator"></li>
             <li>
@@ -138,14 +134,10 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <div className={"btn-wrapper"}>
-                <LinkedInBtn className={`${styles.mobileNav__btn} btn`} />
-              </div>
+              <LinkedInBtn className={`${styles.mobileNav__btn} btn`} />
             </li>
             <li>
-              <div className={"btn-wrapper"}>
-                <GitHubBtn className={`${styles.mobileNav__btn} btn`} />
-              </div>
+              <GitHubBtn className={`${styles.mobileNav__btn} btn`} />
             </li>
             <li className={styles.mobileNav__linkLine}></li>
             <li>

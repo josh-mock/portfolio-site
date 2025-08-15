@@ -1,4 +1,3 @@
-// TODO: Move button wrappers into component
 import styles from "@/components/features/work/ProjectCard/ProjectCard.module.css";
 import GitHubBtn from "@/components/ui/buttons/GitHub";
 import InfoBtn from "@/components/ui/buttons/Info";
@@ -35,26 +34,22 @@ export default function ProjectCard({ project, reverse }) {
         </div>
 
         <div className={styles.projectCard__btns}>
-          <div className="btn-wrapper">
-            <InfoBtn
-              className={`${styles.projectCard__btn} btn`}
-              href={`/projects/${project.id}`}
-            />
-          </div>
-          <div className="btn-wrapper">
-            <LinkBtn
-              className={`${styles.projectCard__btn} btn`}
-              href={project.demoUrl}
-              ariaLabel="View project demo"
-            />
-          </div>
-          <div className="btn-wrapper">
-            <GitHubBtn
-              className={`${styles.projectCard__btn} btn`}
-              href={project.gitHubUrl}
-              ariaLabel="View project's GitHub repository"
-            />
-          </div>
+          <InfoBtn
+            className={`${styles.projectCard__btn} btn`}
+            href={`/projects/${project.id}`}
+          />
+
+          <LinkBtn
+            className={`${styles.projectCard__btn} btn`}
+            href={project.demoUrl}
+            ariaLabel="View project demo"
+          />
+
+          <GitHubBtn
+            className={`${styles.projectCard__btn} btn`}
+            href={project.gitHubUrl}
+            ariaLabel="View project's GitHub repository"
+          />
         </div>
       </div>
     </div>

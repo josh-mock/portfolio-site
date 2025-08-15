@@ -9,12 +9,9 @@ export default function Footer({ className }) {
         <span className={styles.footer__title}>~ Josh Mock ~</span>
         <div className={styles.footer__line} aria-label="Visual divider"></div>
         <div className={styles.footer__btns}>
-          <div className="btn-wrapper">
-            <LinkedInBtn className={`${styles.footer__btn} btn`} />
-          </div>
-          <div className="btn-wrapper">
-            <GitHubBtn className={`${styles.footer__btn} btn`} />
-          </div>
+          <LinkedInBtn className={`${styles.footer__btn} btn`} />
+
+          <GitHubBtn className={`${styles.footer__btn} btn`} />
         </div>
       </div>
     </footer>
