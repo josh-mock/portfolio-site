@@ -11,7 +11,7 @@ const project = {
   fullDescription: (
     <>
       <p>
-        When working with HM Land Registry's{" "}
+        When working with HM Land Registry&#39;s{" "}
         <a
           href="https://www.gov.uk/guidance/hm-land-registry-overseas-companies-that-own-property-in-england-and-wales"
           target="_blank"
