@@ -50,7 +50,7 @@ npm run dev
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+This project is licensed under the [MIT License](LICENSE).
 
 ## Acknowledgements
 
