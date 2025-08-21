@@ -54,9 +54,9 @@ const project = {
   },
   images: [
     {
-      src: "https://placehold.co/1920x968/DDD/DDD",
-      alt: "A video showing a winning game",
-      type: "image",
+      src: "/projects/land-registry-search/1.webm",
+      alt: "Demonstration of using the app",
+      type: "video",
     },
   ],
 };
