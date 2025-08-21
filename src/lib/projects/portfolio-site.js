@@ -34,6 +34,26 @@ const project = {
       alt: "Portfolio site homepage",
       type: "image",
     },
+    {
+      src: "/projects/portfolio-site/2.webp",
+      alt: "Portfolio site about page",
+      type: "image",
+    },
+    {
+      src: "/projects/portfolio-site/3.webp",
+      alt: "Portfolio site projects page",
+      type: "image",
+    },
+    {
+      src: "/projects/portfolio-site/4.webp",
+      alt: "Portfolio site individual project page",
+      type: "image",
+    },
+    {
+      src: "/projects/portfolio-site/5.webp",
+      alt: "Portfolio site contact page",
+      type: "image",
+    },
   ],
 };
 
