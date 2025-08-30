@@ -6,6 +6,7 @@ import MenuToggle from "@/components/ui/toggles/Menu";
 import ThemeToggle from "@/components/ui/toggles/Theme";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { LINKEDIN } from "@/lib/constants";
 
 export default function Header() {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
@@ -74,7 +75,7 @@ export default function Header() {
               <div className={"btn-wrapper"}>
                 <a
                   className={`${styles.mobileNav__btn} btn`}
-                  href="/resume.pdf"
+                  href={LINKEDIN}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -147,7 +148,7 @@ export default function Header() {
               <div className={"btn-wrapper"}>
                 <a
                   className={`${styles.mobileNav__btn} btn`}
-                  href="/resume.pdf"
+                  href={LINKEDIN}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="A link to a pdf"
