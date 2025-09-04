@@ -37,13 +37,7 @@ const project = {
       </p>
     </>
   ),
-  techStack: [
-    "React",
-    "CSS",
-    "React Query",
-    "intl-messageformat",
-    "TypeScript",
-  ],
+  techStack: ["React", "TypeScript"],
   cardImage: {
     src: "/projects/multilingual-wordle/card.webp",
     alt: "A game of Wordle",

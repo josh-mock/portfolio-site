@@ -22,7 +22,7 @@ const project = {
       greater modularisation.
     </p>
   ),
-  techStack: ["Next.js", "React Hook Form", "Vercel"],
+  techStack: ["Next.js"],
   cardImage: {
     src: "/projects/portfolio-site/card.webp",
     placeholder: "https://placehold.co/900x900/DDD/DDD",
